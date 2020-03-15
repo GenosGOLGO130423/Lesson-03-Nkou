@@ -1224,6 +1224,9 @@ figure {
 	background-color: #FFFFFF;
 	color: #272727;
 	width: 100%;
+	display: flex; /* 3/15追加縦並び */
+	flex-direction: column; /* 3/15追加縦並び、 */
+	justify-content: center; /* 3/15追加縦並び、主軸が縦方向*/
 }
 
 
@@ -1231,8 +1234,6 @@ h4.main-topic-20__title {
 	font-size: 25px;
 	line-height: 45px;
 	letter-spacing: 0.6px;
-	display: flex;
-	align-items: center;
 	text-align: left;
 	margin: 0;
 }
@@ -1242,12 +1243,10 @@ p.main-topic-20__detail {
 	line-height: 23.4px;
 	letter-spacing: 0.7px;
 	text-align: left;
-	display: flex;
-	align-items: center;
 	margin: 0;
 }
 
-.movie {
+.main-topic-21 {
 	width:1060px;
 	margin: 0 auto 190px;
 	padding: 70px 10px 1px 10px;
@@ -1333,7 +1332,7 @@ p.main-topic-20__detail {
 	right: 280px;
 }
 
-..footer__main__contact-info a{
+.footer__main__contact-info a{
 	width:100%;
 }
 
@@ -1355,18 +1354,6 @@ p.main-topic-20__detail {
 .footer__main__contact-image:hover{
 	background-color: rgba(192,192,192,0.9) ;	
 }
-
-
-p .footer__main__contact-info-web:after {
-/* 	content: "";
-	display: inline-block;
-	background-repeat: no-repeat;
-	background-size: 10px 15px; /* 背景画像の幅・高さを指定 */
-	background-position: center right;
-	margin-left: 0px;
-	width: 100%; */
-}	
-	
 
 p .footer__main__contact-info-web {
 	font-size: 13px;
