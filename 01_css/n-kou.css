@@ -462,9 +462,6 @@ figure {
 	width: 1060px;
 }
 
-.primary {
-
-}
 
 .primary__text h1 {
 	font-size: 33px;
@@ -1360,15 +1357,14 @@ p.main-topic-20__detail {
 }
 
 
-.footer__main__contact-info-web:after {
-	background-image: url("../02_images/icon_arrow01_right_white01.png");
-	content: "";
-	
+p .footer__main__contact-info-web:after {
+/* 	content: "";
+	display: inline-block;
 	background-repeat: no-repeat;
 	background-size: 10px 15px; /* 背景画像の幅・高さを指定 */
 	background-position: center right;
 	margin-left: 0px;
-	width: 100%;
+	width: 100%; */
 }	
 	
 
@@ -1378,8 +1374,13 @@ p .footer__main__contact-info-web {
 	padding: 10px;
 	color: #FFFFFF;
 	border: 1px solid #FFFFFF;
-	width:210px;
+	width: 210px;
 	display: block;
+	background-image: url("../02_images/icon_arrow_right_white.png");
+	background-repeat: no-repeat;
+	background-size: 5px 9px; /* 背景画像の幅・高さを指定 */
+	background-position: center right 8%;
+	margin-left: 0px;
 }
 
 .footer__main__contact-info-web:hover{
