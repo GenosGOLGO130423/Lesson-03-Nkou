@@ -25,6 +25,7 @@
 
 #page-head {
   font-family: "AxisStd-Regular",sans-serif;
+
 }
 
 a {
@@ -36,13 +37,16 @@ figure {
 	padding: 0;
 }
 
+.page-head-1 {
+	background-color: rgb(247, 247, 247);
+}
+
 .page-head__intro {
 	height: 32px;
-	margin: 0px auto;
-	padding: 0px 120px;
-	background-color: rgb(247, 247, 247);
 	border-color: rgb(247, 247, 247);
-	box-sizing: border-box;
+	width: 980px;
+    padding: 0 10px;
+    margin: 0 auto;
 }
 .page-head__intro p {
 	float: left;
@@ -103,8 +107,10 @@ figure {
 	text-decoration: underline;
 } 
 
-.page-head__intro-1 {
-	clear: both;
+
+.page-head__main-logo-common {
+	width: 1060px;
+	margin: 0 auto;
 }
 
 .page-head__main-logo {
@@ -120,22 +126,22 @@ figure {
 
 .page-head__main-logo figure {
 	margin: 0;
-	padding: 0 120px;
+	padding: 0 60px;
 }
 
 
 .page-head__main-logo-tel-common {
 	float: right;
 	position: absolute;
-	top: 20px;
-	right: 50px;
+	top: 23px;
+	right: 30px;
 }
 
 .page-head__social-button {
 	display: flex;
 	position: absolute;
-	right: 50px;
-	bottom: 30px;
+	right: -4px;
+	bottom: 25px;
 }
 
 
@@ -155,20 +161,26 @@ figure {
 	padding:0;
 }
 
-.page-head__intro-1 ul li:first-child {
+.page-head__mainguide {
+	position: relative;
+}
+
+.page-head__mainguide__detail ul li:first-child {
 	margin-right: 10px;
 }
 
-.page-head__intro-1{
-	margin-right: 120px;
+.page-head__mainguide__detail{
+	position: absolute;
+	top: -9px;
+	right: 30px;
 }
 
-.page-head__intro-1 ul {
+.page-head__mainguide__detail ul {
 	float: right;
 	display: flex;
 }
 
-.page-head__intro-1 ul li {
+.page-head__mainguide__detail ul li {
 	list-style: none;
 	border: solid 1px #000066;
 	padding: 9px 10px 8px 10px;
@@ -176,12 +188,12 @@ figure {
 	text-align: center;
 }
 
-.page-head__intro-1 ul li a{
+.page-head__mainguide__detail ul li a{
 	color: #1f286f;
 	font-weight: bold;
 }
 
-.page-head__intro-1 ul li a:after {
+.page-head__mainguide__detail ul li a:after {
 	content:"";
 	display:inline-block;
 	background-image: url("../02_images/icon_arrow01_right_blue01.png");
@@ -193,11 +205,11 @@ figure {
 	line-height: 10px;
 }
 
-.page-head__intro-1 ul li:hover {
+.page-head__mainguide__detail ul li:hover {
 	background-color: #1f286f;
 }
 
-.page-head__intro-1 ul li a:hover:after {
+.page-head__mainguide__detail ul li a:hover:after {
 	content:"";
 	display:inline-block;
 	background-image: url("../02_images/icon_arrow_right_white.png");
@@ -209,21 +221,32 @@ figure {
 	line-height: 10px;
 }
 
-.page-head__intro-1 ul li a:hover {
+.page-head__mainguide__detail ul li a:hover {
 	color: #FFF;
 }
 
+.page-head__mainguide__detail:after{
+	content: "";
+	display: block;
+	clear: both;
+}
 
 
 #global-nav {
-	margin: 5px 0px 0px 100px;
+	margin: 5px 0 0;
+	width: 640px;
+
 }
 
 #global-nav ul {
-	width: 100%
 	margin: 0;
 	padding: 0;
-	box-sizing: border-box;
+}
+
+#global-nav ul:after {
+	content: "";
+	display: block;
+	clear: both;
 }
 
 #global-nav ul li {
@@ -356,10 +379,28 @@ figure {
 	clear: both;
 }
 
+.t {
+	width: 1060px;
+	height: 5px;
+	margin: 0 auto;
+}
+
+.triangle {
+	width: 0;
+    height: 0;
+    border-left: 8px solid transparent;
+    border-right: 8px solid transparent;
+    border-bottom: 8px solid #181836;
+    position: absolute;
+    top: -5px;
+    left: 178px;
+}
+
 #local-nav {
 	background-color: #181836;
 	padding:0px 120px;
 	margin-top: 10px;
+	position:relative;
 }	
 #local-nav ul {
 	margin: 0 auto;
@@ -386,7 +427,7 @@ figure {
 	box-sizing: border-box;
 }
 
-#local-nav li:first-child a:first-child:before {
+#local-nav li:first-child:before {
 	content: none; 
 }
 
@@ -407,6 +448,43 @@ figure {
 	background: #FFFFFF;
 	color: #1f286f;
 	text-decoration: none;
+}
+
+.main-contents-image {
+	background-image:url("../02_images/mainimage.jpg");
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	min-height: 530px;
+	width: auto;
+}
+
+.catchcopy {
+    font-weight: 400;
+    text-align: center;
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-top: 50px;
+    color: #FFFFFF;
+    font-size: 52px;
+    letter-spacing: 15px;
+    position: relative;
+}
+
+.catchcopy:before{
+	content: "";
+	position: absolute;
+	left: 530px;
+	bottom: -5px;
+	width: 200px;
+	height: 1px;
+/* 	transform: translateX(-50%); */
+	background-color: #FFFFFF;
+}
+
+.about {
+    text-align: center;
+    padding-top: 10px;
 }
 
 #breadcrumbs {
